@@ -1,0 +1,50 @@
+<%- include('../partials/header.ejs') %>
+
+    <title>EDIÇÃO DE MARCAS</title>
+
+    </head>
+
+    <body>
+
+        <div class="container">
+
+            <%- include('../partials/menu.ejs') %>
+
+                <div class="card mt-2">
+                    <div class="card-header">EDIÇÃO DE MARCAS</div>
+                </div>
+
+                <div class="card-body">
+                    <form action="http://localhost:3001/alterarDados" method="post">
+                        <h1>EDITAR DADOS</h1>
+                            <input type="hidden" name="id" id="id" value="<%= carros.id %>" />
+                             <label for="">COD_CARRO</label>
+                            <input type="text" class="form-control" name="cod_carro" id="cod_carro" placeholder="DIGITE O CODIGO"
+                             value="<%= carros.cod_carro %>" />
+                            <label for="">Cor</label>
+                            <input type="text" class="form-control" name="cor" id="cor" placeholder="DIGITE A COR"
+                             value="<%= carros.cor %>" />
+                            
+                            <label for="">Ano</label>
+                            <input type="text" class="form-control" name="ano" id="ano" placeholder="DIGITE O ANO" 
+                            value="<%= carros.ano %>" /> 
+                            
+                            <label for="">Marca</label>
+                            <input type="text" class="form-control" name="marca" id="marca" placeholder="DIGITE A MARCA"
+                            value="<%= carros.marca %>" />
+                            
+                            <label for="">Placa</label>
+                            <input type="text" class="form-control" name="placa" id="placa" placeholder="DIGITE A PLACA"
+                            value="<%= carros.placa %>" />    
+                            
+                            <label for="">Modelo</label>
+                            <input type="text" class="form-control" name="modelo" id="modelo" placeholder="DIGITE O MODELO"
+                            value="<%= carros.modelo %>" /> 
+                        <button class="btn btn-success mt-2">EDITAR</button>
+                    </form>
+                </div>
+        </div>
+
+    </body>
+
+    <%- include('../partials/footer.ejs') %>

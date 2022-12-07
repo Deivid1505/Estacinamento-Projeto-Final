@@ -1,0 +1,17 @@
+para o banco de dados
+create database estacionamento;
+use estacionamento;
+select * from tb_carros;
+
+==============================================================
+para o postman
+get
+http://localhost:3006/listarCarros
+get findbypk
+http://localhost:3006/buscarCarro/6
+post
+http://localhost:3006/cadastrarCarro
+put
+http://localhost:3006/alterarDados
+delete
+http://localhost:3006/excluirDados/2

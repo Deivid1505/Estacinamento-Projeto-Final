@@ -1,0 +1,46 @@
+<%- include('../partials/header.ejs')  %>
+
+<title>CADASTRO DE MARCA</title>
+
+</head>
+
+<body>
+    
+    <div class="container">
+
+        <%- include('../partials/menu.ejs') %>
+
+        <div class="card mt-2">
+            <div class="card-header">CADASTRO DE MARCAS</div>
+        </div>
+
+        <div class="card-body">
+            <form action="http://localhost:3001/cadastrarCarroo" method="post">
+                
+            <label for="">COD_CARRO</label>
+                <input type="text" class="form-control"  name="cod_carro" id="cod_carro" placeholder="DIGITE A Placa">
+            
+            <label for="">Cor</label>
+              <input type="text" class="form-control"  name="cor" id="cor"  placeholder="DIGITE A COR">
+              
+            <label for="">Ano</label>
+                <input type="text" class="form-control"  name="ano" id="ano"  placeholder="DIGITE O ANO">
+            
+            <label for="">Modelo</label>
+                <input type="text" class="form-control" name="modelo" id="modelo" placeholder="DIGITE O MODELO">
+
+            <label for="">Marca</label>
+                <input type="text" class="form-control"  name="marca" id="marca" placeholder="DIGITE A MARCA">
+
+            <label for="">Placa</label>
+                <input type="text" class="form-control" name="placa" id="placa" placeholder="DIGITE A PLACA">
+
+            
+                <button class="btn btn-success mt-2">CADASTRAR</button>
+            </form>
+        </div>
+    </div>
+ 
+    </body>
+
+<%- include('../partials/footer.ejs')  %>
